@@ -10,17 +10,18 @@ A sample composer.json for your project that might requires SimpleCAS might look
 {
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/saltybeagle/SimpleCAS.git"
+            "type": "composer",
+            "url": "https://packagist.org"
         },
         {
-            "type": "pear",
-            "url": "http://pear.php.net"
+            "type": "vcs",
+            "url": "https://github.com/cnxh/SimpleCAS.git"
         }
     ],
     "require": {
-        "pear-pear/HTTP_Request2": "*",
-        "SimpleCAS/SimpleCAS": "dev-master"
+        "pear/pear_exception": "1.0.*@dev",
+        "pear/http_request2": "*",
+        "simple-cas/simple-cas": "dev-master"
     }
 }
 ```
